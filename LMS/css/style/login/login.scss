@@ -1,0 +1,120 @@
+$color1: #fff;
+$color2: #12e2a3;
+$color3:   white;
+$color4: black;
+$color5: #007065;
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .cross{
+    position: absolute;
+     top:2rem;
+     right:3rem;
+     z-index: 100;
+     i{ padding: 5px;border-radius: 6px;}
+     @media(max-width:425px) {
+       top:1rem;
+       right:2rem;
+    }   
+    i:hover{
+      color:white;
+      background-color: $color4;
+    }
+  }
+
+  #background {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("/css/style/picture/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    color:$color4;
+  }
+
+  #loginBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 27vw;
+    height: 100vh;
+    @media(max-width:768px) {
+      width: 35vw;
+    }
+    @media(max-width:425px) {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #login {
+      align-items: center;
+      background-color:$color1;
+      border-radius: 0.5rem;
+      //   border: 1px solid lime;
+      @media(max-width:425px) {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+      }
+      #loginTittle {
+        span {
+          border-bottom: 3px solid $color2;
+        }
+      }
+
+      #form {
+        #inputFld {
+          // border: 1px solid red;
+          .inp1 {
+            margin-bottom: rem;
+          }
+          i{
+            font-size: 24px;
+            padding: 2px;
+          }
+          #pass{
+            position: relative;
+            span{
+              position: absolute;
+              top: 1;
+              right:0.5rem;
+              color:black;
+              i{
+                font-size:1rem;
+              }
+              cursor: pointer;
+              :nth-child(1){
+                display: none;
+              }
+            }
+
+          }
+
+        }
+
+        #forget {
+          @media(max-width:768px) {
+            label,
+            span {
+              font-size: 12px;
+            }
+
+            span {
+              color: $color2;
+            }
+          }
+        }
+
+        #button {
+          input {
+            background-color: $color2;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+body{
+  $color1:#eac100;
+  $color2:rgb(233, 229, 229)   ;
+  $color3:#5d13e7;
+
+  background-image:url("/css/style/picture/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  #tittle{
+      border-bottom: 2px solid $color3;
+  }
+  #formPage{
+    background-color: $color2;
+    border-radius: .5rem;
+    color:$color3;
+    button{
+        background:$color1;
+    }
+    .label{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    input:focus{
+        outline: none;
+        outline-color: none;
+    } 
+  }
+ @media (max-width:720px){
+   #tittle>h3{
+     font-size: 15px;
+   }
+ }
+ @media (max-width:320px){
+  #tittle>h3{
+    font-size: 12px;
+  }
+  .login{
+    font-size: 12px;
+  }
+}
+}

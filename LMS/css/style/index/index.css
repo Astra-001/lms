@@ -1,0 +1,278 @@
+body {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body #one {
+  height: 70vh;
+  position: relative;
+  color: white !important;
+  background: url("/content/ban2.jpg") center center/cover;
+}
+
+@media (max-width: 450px) {
+  body #one {
+    height: 50vh;
+  }
+}
+
+body #one #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  height: 12vh;
+  top: 0;
+}
+
+body #one #header .text h6, body #one #header .text i {
+  color: red;
+}
+
+body #one #header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #one #header .nav i {
+  font-size: 1.6rem;
+}
+
+body #one #header .nav .btn1 {
+  text-decoration: none;
+  color: black !important;
+  padding: 8px;
+  border-radius: .2rem;
+  background-color: salmon;
+}
+
+@media (max-width: 450px) {
+  body #one #header .nav .btn1 {
+    display: none;
+  }
+}
+
+body #one #header .nav .btn1:hover {
+  background-color: #151519;
+  color: #00ffff !important;
+}
+
+@media (min-width: 450px) {
+  body #one #header .nav .ExtraA {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  body #one #header .nav .ExtraA {
+    display: block;
+  }
+}
+
+body #one #imgText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 58vh;
+}
+
+@media (max-width: 450px) {
+  body #one #imgText {
+    height: 38vh;
+  }
+}
+
+body #one #imgText #bannerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #one #imgText #bannerText #input {
+  border-radius: 0.4rem;
+  height: 2.5rem;
+  width: auto;
+  max-width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #fff;
+}
+
+body #one #imgText #bannerText #input input {
+  height: inherit;
+  border: none;
+  border-radius: 0.4rem;
+  padding-left: .5rem;
+}
+
+body #one #imgText #bannerText #input input:focus {
+  outline: none;
+  padding-left: .5rem;
+}
+
+body #one #imgText #bannerText #input span {
+  height: inherit;
+  color: red;
+  padding: 2px 5px;
+  cursor: none;
+}
+
+body #one #imgText #bannerText #input span :hover {
+  color: black;
+}
+
+body #menuBar {
+  background-color: #61cebf;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  height: 100vh;
+  width: 20%;
+}
+
+@media (max-width: 425px) {
+  body #menuBar {
+    width: 30%;
+  }
+}
+
+body #menuBar .inside {
+  margin: 20px 10px;
+  height: 90%;
+}
+
+body #menuBar .inside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  height: 100%;
+}
+
+body #menuBar .inside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3rem 0;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #menuBar .inside ul li:hover {
+  background-color: #151519;
+  color: #00ffff !important;
+  border-radius: 2px;
+}
+
+body #tutorial {
+  width: auto;
+  color: #fff;
+  background-color: #EB3474;
+}
+
+body #tutorial .row {
+  height: auto;
+}
+
+body #tutorial .row .text {
+  text-align: center;
+  padding: .5rem 0;
+  border-bottom: 2px solid #fff;
+}
+
+body #tutorial .row .office {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #tutorial .row .office span :hover {
+  color: #000;
+}
+
+body #tutorial .row .office #deatial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0.5rem;
+  color: black;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+}
+
+body #tutorial .row .office #deatial img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px 0;
+}
+
+body #tutorial .row .office #deatial h6 {
+  text-align: center;
+}
+
+body #tutorial .row .office #deatial span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body #tutorial .row .office #deatial span a {
+  padding: 10px;
+  text-decoration: none;
+  color: red;
+  background-color: #C24475;
+  padding: 2px 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=index.css.map */

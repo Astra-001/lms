@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body .cross {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 100;
+}
+
+body .cross i {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+@media (max-width: 425px) {
+  body .cross {
+    top: 1rem;
+    right: 2rem;
+  }
+}
+
+body .cross i:hover {
+  color: white;
+  background-color: black;
+}
+
+body #background {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/css/style/picture/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: black;
+}
+
+body #loginBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 27vw;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body #loginBox {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 425px) {
+  body #loginBox {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+body #loginBox #login {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  body #loginBox #login {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+body #loginBox #login #loginTittle span {
+  border-bottom: 3px solid #12e2a3;
+}
+
+body #loginBox #login #form #inputFld .inp1 {
+  margin-bottom: rem;
+}
+
+body #loginBox #login #form #inputFld i {
+  font-size: 24px;
+  padding: 2px;
+}
+
+body #loginBox #login #form #inputFld #pass {
+  position: relative;
+}
+
+body #loginBox #login #form #inputFld #pass span {
+  position: absolute;
+  top: 1;
+  right: 0.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+body #loginBox #login #form #inputFld #pass span i {
+  font-size: 1rem;
+}
+
+body #loginBox #login #form #inputFld #pass span :nth-child(1) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body #loginBox #login #form #forget label,
+  body #loginBox #login #form #forget span {
+    font-size: 12px;
+  }
+  body #loginBox #login #form #forget span {
+    color: #12e2a3;
+  }
+}
+
+body #loginBox #login #form #button input {
+  background-color: #12e2a3;
+}
+/*# sourceMappingURL=login.css.map */
